@@ -4,14 +4,14 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-import { Item } from '../src/stores/Item'
+import  Item  from '../src/stores/Item'
 import { ShoppingList } from '../src/stores/ShoppingList'
 
 
-// let potatoes = new Item("Potatoes")
-// let groceryList = new ShoppingList()
-// groceryList.list.push(potatoes)
+let potatoes = new Item("Potatoes")
+let groceryList = new ShoppingList()
+groceryList.list.push(potatoes)
 
-// Use the prop "store" for your store
-ReactDOM.render(<App />, document.getElementById('root'));
+// Use the prop store for your store
+ReactDOM.render(<App store={groceryList} />, document.getElementById('root'));
 registerServiceWorker();
