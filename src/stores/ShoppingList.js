@@ -22,6 +22,12 @@ export class ShoppingList {
 
     }
 
+    @action deleteItem = (itemName) => {
+        let index = this.list.findIndex(l => l.name == itemName)
+        console.log(index)
+        this.list.splice(index, 1)
+
+    }
 
 }
 
