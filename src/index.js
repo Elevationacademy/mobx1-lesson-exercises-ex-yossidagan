@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import {Item}  from './stores/ItemStore'
-import { ShoppingList } from './stores/ShoppingListStore'
+import {Item}  from './stores/Item'
+import { ShoppingList } from './stores/ShoppingList'
 
 let potatoes = new Item("Potatoes")
 let corn = new Item("Corn")

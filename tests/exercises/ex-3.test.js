@@ -2,7 +2,7 @@ import React from 'react';
 import App from '../../src/App';
 import { mount, render, shallow, configure} from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import { ShoppingList } from '../../src/stores/ShoppingListStore';
+import { ShoppingList } from '../../src/stores/ShoppingList';
 import Item from '../../src/components/Item';
 
 configure({ adapter: new Adapter() });

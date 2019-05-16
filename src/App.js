@@ -17,7 +17,7 @@ class App extends Component {
     this.props.store.addItem(this.state.newItem)
   }
 
-  
+
 
   render() {
 
@@ -28,12 +28,15 @@ class App extends Component {
         < DevTools />
         <input onChange={this.handleChange} />
         <button onClick={this.addItem}>Add</button>
+
         {this.props.store.list.map((i, index) => <Item item={i}
-            key={index}
+          key={index}
           store={this.props.store} />
         )}
+
         
       </div>
+
     );
   }
 }
