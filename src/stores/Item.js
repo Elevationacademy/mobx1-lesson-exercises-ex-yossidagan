@@ -1,15 +1,22 @@
-import { observable } from 'mobx'
-import React, { Component } from 'react';
-import { observer } from 'mobx-react'
+import { observable } from 'mobx';
 
-@observer
-class Item extends Component {
-    // other methods
-    render() {
-        let item = this.props.item
-        return (
-            <div> {item.name} </div>)
+export class Item {
+
+    @observable name
+    @observable completed = false
+
+    constructor(newName) {
+        this.name = newName
+    }
+
+
+    checkItem = () => {
+        //your code here
+    }
+    editItem = () => {
+        //your code here
+    }
+    deleteItem = () => {
+        //your code here
     }
 }
-
-export default Item
