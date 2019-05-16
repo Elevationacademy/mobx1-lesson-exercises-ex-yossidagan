@@ -13,10 +13,7 @@ export class ShoppingList {
     }
 
     @action editItem = (itemName, newLocation) => {
-        console.log("J")
-        console.log(itemName)
-        console.log(newLocation)
-
+     
         let itemToEdit = this.list.find(l => l.name == itemName)
         itemToEdit.location = newLocation
 
