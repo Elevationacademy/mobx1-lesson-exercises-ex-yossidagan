@@ -4,14 +4,8 @@ import './App.css';
 import Item from './components/Item';
 import DevTools from 'mobx-react-devtools'
 
-
-
 @observer
 class App extends Component {
-  //other Methods
-
-
-  
   handleChange = (e) => {
     this.setState({
       newItem: e.target.value
@@ -19,6 +13,7 @@ class App extends Component {
   }
 
   addItem = () => {
+    console.log(this.props.store)
     this.props.store.addItem(this.state.newItem)
   }
 

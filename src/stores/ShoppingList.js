@@ -2,15 +2,17 @@ import { observable, action } from 'mobx'
 import { Item } from './Item'
 
 
-export class ShoppingList  {
+export class ShoppingList {
     // your code here
-   @observable list = [];
-   @observable length;
-   
-    checkItem = () => {
-        // your code here
+    @observable list = [];
+    @observable length;
+
+    @action addItem = (newItem) => {
+        console.log(newItem)
+        this.list.push(new Item(newItem))
     }
-    addItem = () => {
+
+    checkItem = () => {
         // your code here
     }
     editItem = () => {
@@ -18,6 +20,6 @@ export class ShoppingList  {
     }
     deleteItem = () => {
         // your code here
-    } 
+    }
 }
 
