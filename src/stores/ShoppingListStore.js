@@ -1,5 +1,5 @@
 import { observable, action } from 'mobx'
-import { Item } from './Item'
+import { Item } from './ItemStore'
 
 
 export class ShoppingList {

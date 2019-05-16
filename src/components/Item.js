@@ -11,7 +11,7 @@ class Item extends Component {
             <div className = {item.completed ? "crossed": null}>
             <input type="checkbox"
                 value={item.name}/> 
-                {item.name} 
+                {item.name} {item.location}
             </div>)
     }
 }

@@ -3,7 +3,7 @@ import App from '../../src/App';
 import { mount, configure} from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import {isObservableProp } from 'mobx'
-import { ShoppingList } from '../../src/stores/ShoppingList';
+import { ShoppingList } from '../../src/stores/ShoppingListStore';
 import Item from '../../src/components/Item'
 
 configure({ adapter: new Adapter() });

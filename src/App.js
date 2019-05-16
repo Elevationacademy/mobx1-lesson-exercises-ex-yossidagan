@@ -32,6 +32,7 @@ class App extends Component {
             key={index}
           store={this.props.store} />
         )}
+        
       </div>
     );
   }

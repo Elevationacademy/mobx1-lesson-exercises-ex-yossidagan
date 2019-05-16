@@ -1,5 +1,5 @@
 import Adapter from 'enzyme-adapter-react-16';
-import {ShoppingList} from '../../src/stores/ShoppingList'
+import {ShoppingList} from '../../src/stores/ShoppingListStore'
 import { isObservable } from 'mobx' 
 import { configure } from 'enzyme';
 
